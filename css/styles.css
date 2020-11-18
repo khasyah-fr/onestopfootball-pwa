@@ -1,0 +1,167 @@
+/* CHANGE COLOURS AND FEELS IF NEEDED
+
+/* colours */
+:root {
+  --primary: #0d324d;
+  --secondary: #7f5a83;
+  --title: #d9d9fc;
+  --gradient: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  background-color: #d4d4d450;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.garis {
+  border: 1px ridge var(--gradient);
+}
+
+/* layout styles */
+nav {
+  background: var(--gradient);
+}
+
+.navbar-fixed {
+  height: 0px;
+  margin-bottom: 0;
+}
+
+.navbar-fixed nav ul {
+  text-align: center;
+}
+
+.navbar-fixed nav ul li {
+  display: inline;
+  float: none;
+}
+
+.navbar-fixed nav ul li a {
+  display: inline-block;
+}
+
+.navbar-fixed nav {
+  bottom: 0;
+  border-bottom: 0;
+}
+
+ul li a.waves-effect:hover {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  color: white;
+}
+
+nav a {
+  color: var(--title);
+}
+
+nav li a {
+  text-transform: uppercase;
+  color: var(--title);
+}
+
+.logoFont {
+  color: var(--title);
+  font-weight: 100;
+}
+
+/* standings */
+th {
+  color: var(--primary);
+}
+
+td {
+  color: black;
+}
+/* footer */
+footer {
+  margin-bottom: 0;
+  overflow-y: hidden;
+}
+
+.footerColor {
+  background: var(--gradient);
+}
+
+.fab {
+  color: white;
+  font-size: 2.5em;
+  margin: 2px;
+}
+
+.fab:hover {
+  color: var(--title);
+}
+
+.spaceIcon {
+  padding: 7px;
+}
+
+/* Card */
+.card:hover {
+  background-color: var(--title);
+}
+
+.card-content {
+  background-color: white;
+  color: var(--primary);
+}
+
+.card-image img {
+  width: 4rem;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.card-title {
+  font-weight: bold !important;
+  text-shadow: 2px 2px #ababab;
+}
+
+.card-desc {
+  background-color: white;
+  color: var(--primary);
+  padding: 2px 12px;
+}
+
+/* PRELOADER */
+.preloader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#leagues a {
+  color: black;
+}
+
+#btnLoadMore,
+#btnLoadNext {
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 765px) {
+  .sm-gone {
+    display: none;
+  }
+
+  footer {
+    margin-bottom: 4.5rem;
+  }
+}

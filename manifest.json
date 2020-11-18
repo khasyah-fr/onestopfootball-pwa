@@ -1,0 +1,28 @@
+{
+    "name": "One Stop Football PWA",
+    "short_name": "OSFPWA",
+    "description": "One Stop Football PWA",
+    "start_url": "https://khasyah-fr.github.io/onestopfootball-pwa/index.html",
+    "display": "standalone",
+    "background_color": "#7F5A83",
+    "theme_color": "#FFFFFF",
+    "icons": [
+        {
+            "src": "https://khasyah-fr.github.io/onestopfootball-pwa/icons/timericon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }, 
+        {
+            "src": "https://khasyah-fr.github.io/onestopfootball-pwa/icons/timericon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://khasyah-fr.github.io/onestopfootball-pwa/icons/maskable_timericon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "gcm_sender_id": "1001283164705"
+}

@@ -1,0 +1,119 @@
+<!--CHANGE FUNCTION NAMES, CONTENTS, AND FEELS IF NEEDED-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>One Stop Football</title>
+    <meta name="description" content="One Stop Football" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://khasyah-fr.github.io/onestopfootball-pwa/css/materialize.min.css" />
+    <link rel="stylesheet" href="https://khasyah-fr.github.io/onestopfootball-pwa/css/styles.css" />
+    <link rel="manifest" href="https://khasyah-fr.github.io/onestopfootball-pwa/manifest.json" />
+    <link rel="icon" href="https://khasyah-fr.github.io/onestopfootball-pwa/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://khasyah-fr.github.io/onestopfootball-pwa/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://khasyah-fr.github.io/onestopfootball-pwa/icons/timericon.png" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Awal Navigasi -->
+    <div class="navbar-fixed hide-on-large-only">
+      <nav>
+        <div class="nav-wrapper">
+          <ul class="botnav row"></ul>
+        </div>
+      </nav>
+    </div>
+    <nav class="nav-extended" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="https://khasyah-fr.github.io/onestopfootball-pwa" class="brand-logo logoFont">OSF</a>
+        <ul class="topnav right hide-on-med-and-down"></ul>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <div class="content" style="display: none">
+      <!--Awal Content-->
+      <div id="app" class="body-content"></div>
+      <!--Akhir Content-->
+      <!--Menampilkan Loading Animation Ketika Data di Load-->
+      <div class="preloader-wrapper big active" style="display: block">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Awal Footer -->
+      <footer class="page-footer footerColor">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text logoFont">OSF</h5>
+              <p class="grey-text text-lighten-4">
+                One Stop Football adalah website penyedia informasi sepakbola
+                dari berbagai liga dan kompetisi populer di dunia.<br /><br />
+              </p>
+            </div>
+
+            <div class="col l4 offset-l2 s12">
+              <h5 class="sosmed white-text">Contact Me</h5>
+              <a
+                aria-label="github"
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/khasyah-fr"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+              <a
+                aria-label="linkedin"
+                target="_blank"
+                rel="noopener"
+                href="https://linkedin.com/in/fitra-rahmani"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Akhir Footer-->
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/getCompetitions.js"></script>
+    <script src="js/getSavedTeam.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/cek_sw.js"></script>
+    <script src="js/idb/lib/idb.js"></script>
+    <script src="js/osf_db.js"></script>
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          document.querySelector(".content").style.display = "block";
+          document.querySelector(".preloader-wrapper").style.display = "none";
+        }, 2000);
+      };
+    </script>
+  </body>
+</html>

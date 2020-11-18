@@ -1,0 +1,13 @@
+{
+  "name": "onestopfootball",
+  "version": "1.0.0",
+  "description": "OneStopFootball",
+  "main": "index.html",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.0.0",
+    "web-push": "^3.4.4"
+  }
+}
