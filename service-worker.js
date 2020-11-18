@@ -170,7 +170,9 @@ workbox.precaching.precacheAndRoute([
     url: "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap",
     revision: "1",
   },
-]);
+], {
+ignoreUrlParametersMatching: [/.*/]
+});
 
 self.addEventListener("install", (event) => {
   const urls = ["https://khasyah-fr.github.io/onestopfootball-pwa/offline.html"];
